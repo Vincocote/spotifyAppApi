@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Spotify Page</title>
+
+</head>
+<body>
+
+
+<h1 th:text="${something}"/>
+
+<button type="button" th:onclick="topArtists()">Get Top Artists</button>
+<button type="button" th:onclick="topTracks()">Get Top Tracks</button>
+<button type="button" th:onclick="newReleasesCountry()">Get USA new releases</button>
+<button type="button" th:onclick="newRapReleasesCountry()">Get USA new rap releases</button>
+<button type="button" th:onclick="savedTracks()">Get Saved Tracks</button>
+
+<h2> Top Artists :</h2>
+<div id="artists"></div>
+
+<h2> Top Morceaux :</h2>
+<div id="tracks"></div>
+
+<h2> New Releases from inputed country : </h2>
+<div id="newReleases"></div>
+
+<h2> New Rap Releases from inputed country : </h2>
+<div id="newRapReleases"></div>
+
+<h2> Saved Tracks : </h2>
+<div id="savedTracks  "></div>
+
+<script src="js/topArtists.js"></script>
+
+
+</body>
+
+</html>
